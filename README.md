@@ -61,7 +61,7 @@ telegram_bot_basic_features/
 
 # Требования
 
-Перед запуском необходимо установить:
+о установить:
 
 - Python **3.10**
 - pip
@@ -69,14 +69,15 @@ telegram_bot_basic_features/
 Проверить можно командами:
 
 ```bash
-python --version
-pip --version
+python3.10 --version
+python3.10 -m pip --version
 ```
 
 Ожидаемый результат:
 
 ```text
 Python 3.10.x
+pip <version> from <path> (python 3.10)
 ```
 
 Если у вас установлена версия Python **3.13** или новее, необходимо установить **Python 3.10**, поскольку библиотека **aiogram 2.25.1** не поддерживает более новые версии Python.
@@ -250,58 +251,6 @@ python basic_bot.py
 | `/create_keyboard` | Создать Reply Keyboard |
 | `/delete_keyboard` | Удалить Reply Keyboard |
 | `/inline` | Показать Inline Keyboard |
-
----
-
-# Возможные ошибки
-
-### ModuleNotFoundError
-
-Не установлены зависимости.
-
-Решение:
-
-```bash
-pip install -r pip_requirements.txt
-```
-
----
-
-### BOT_TOKEN is None
-
-Не найден файл `.env` или неверно указано название переменной.
-
-Проверьте, что файл называется именно
-
-```
-.env
-```
-
-и содержит
-
-```env
-BOT_TOKEN=ваш_токен
-```
-
----
-
-### Unauthorized
-
-Указан неверный токен.
-
-Создайте нового бота через **@BotFather** или скопируйте токен заново.
-
----
-
-### Фотографии или видео не отправляются
-
-Убедитесь, что файлы
-
-- `messi.jpg`
-- `messi.mp4`
-- `messi_video_note.mp4`
-
-находятся в одной директории с `basic_bot.py`.
 
 ---
 
