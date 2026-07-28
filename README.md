@@ -103,17 +103,17 @@ cd telegram_bot_basic_features
 
 ### 2. Создать виртуальное окружение (рекомендуется)
 
-Windows
+**Windows**
 
 ```bash
-python -m venv venv
+py -3.10 -m venv venv
 venv\Scripts\activate
 ```
 
-Linux / macOS
+**Linux / macOS**
 
 ```bash
-python3 -m venv venv
+python3.10 -m venv venv
 source venv/bin/activate
 ```
 
